@@ -1,0 +1,353 @@
+* {
+    font-family: Segoe UI;
+}
+
+h1 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+}
+
+body {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#linha_topo {
+    width: 100%;
+    top: 0;
+}
+
+#topo {
+    background-color: red;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#topo #logo img {
+    width: 100px;
+    height: 90px;
+    background-color: red;
+    margin-right: 5%;
+}
+
+#topo h1 {
+    width: 300px;
+    font-size: 30px;
+    margin-left: 2%;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#menu {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+#menu ul li a:hover {
+    background-color: darkgray;
+}
+
+.linha_topo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    min-height: 100vh;
+}
+
+#rodape {
+    width: 100%;
+    color: #f5f5f5;
+}
+
+.link {
+    text-decoration: none;
+}
+
+#footer_conteudo {
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+    color: #f5f5f5;
+}
+
+#contatos h1 {
+    margin-bottom: 0.75rem;
+}
+
+#redes_sociais {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#redes_sociais .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0, 4s;
+}
+
+#redes_sociais .link i {
+    font-size: 1.25rem;
+}
+
+#redes_sociais .link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.lista .link {
+    color: #a8a29e;
+    transition: all 0.4s;
+}
+
+.lista .link:hover {
+    color: #7f37c9;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #0e0c0c;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    color: #f5f5f5;
+}
+
+/* Fim rodapé */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#parte1,
+#parte2,
+#parte3,
+#parte4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(82, 10, 10);
+
+}
+
+.card {
+    background-image: url('c:\Users\SESI SENAI 2\Downloads\313a6f9a-651b-4434-b131-d1b10df42a0d-removebg-preview.png');
+    margin: 30px;
+    border-radius: 16px;
+    box-shadow: rgba(255, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.card img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.card:hover {
+    background-image: linear-gradient(#020005, #7d0606);
+}
+
+.card .img {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 20px;
+    opacity: 0;
+    transition: opacity .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover .content {
+    opacity: 1;
+    height: 260px;
+    padding: 20px;
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+.Nigiri .img {
+    background-image: url('https://gathai.multiappbrasil.tec.br/_core/_uploads//2023/09/1827240923eei8k9dakd.jpg');
+}
+
+.Maki .img {
+    background-image: url(https://asianinspirations.com.au/wp-content/uploads/2021/02/R02710_California_Maki_Sushi-3.jpg);
+}
+
+.Temaki .img {
+    background-image: url('https://koibc.com.br/cardapios/storage/images/2021/09/temaki-atum.jpg');
+}
+
+.Sashimi .img {
+    background-image: url(https://ohtasushi.com.br/wp-content/uploads/2023/01/post_16Prancheta_1_copiar_5-1024x544.jpg)
+}
+
+.Porção .img {
+    background-image: url(https://acdn.mitiendanube.com/stores/001/391/305/products/mix-legumes-porcao-individual-100g-comprar1-b00d474af8bb40d2e016597991339880-640-0.jpg);
+}
+
+.Camarão .img {
+    background-image: url(https://www.casalcozinha.com.br/wp-content/uploads/2021/07/tempura-de-camarao-18.jpeg);
+}
+
+.Polvo .img {
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/15/95/f1/5e/tempura-de-polvo.jpg);
+}
+
+.Frango .img {
+    background-image: url(https://www.casalcozinha.com.br/wp-content/uploads/2021/07/tempura-de-camarao-18.jpeg);
+}
+
+.tonkotsu .img {
+    background-image: url(https://i0.wp.com/www.angsarap.net/wp-content/uploads/2022/03/Tonkotsu-Ramen-Wide.jpg?fit=1080%2C720&ssl=1);
+}
+
+.Shoyu .img {
+    background-image: url(https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I.jpg);
+}
+
+.Vegano .img {
+    background-image: url(https://www.recetaslider.cl/wp-content/uploads/2022/08/ramenvegetariano_h-scaled.jpg);
+}
+
+.Miso .img {
+    background-image: url(https://www.minhareceita.com.br/app/uploads/2023/01/lamen-de-frango-1.jpg);
+}
+
+.Teriyaki .img {
+    background-image: url(https://static.itdg.com.br/images/360-240/98aa503db644ae49de8391a73cae85c7/303363-original.jpg);
+}
+
+.Legumes .img {
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0f/5e/fc/3a/espetos-de-legumes-abobrinha.jpg);
+}
+
+.Grelhado .img {
+    background-image: url(https://i.pinimg.com/736x/7b/49/28/7b49289f73c04edda1ad194c9bd9e973.jpg);
+}
+
+.Aspargos .img {
+    background-image: url(https://www.comidaereceitas.com.br/img/sizeswp/1200x675/2020/08/espetinho_frango_japones.jpg);
+}
